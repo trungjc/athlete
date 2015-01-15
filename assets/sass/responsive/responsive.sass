@@ -1,0 +1,46 @@
+@media screen and (min-width: 768px) and (max-width: 979px)
+  .container
+    padding: 0 15px
+
+@media (max-width: 767px)
+  #menu
+    +position(fixed, null null 0 0)
+    width: 100%
+    z-index: 99
+
+  #main-content 
+    .container 
+      padding-bottom: 48px
+  .container
+    padding: 0 15px
+  .mobile-visible
+    display: block !important
+  .mobile-hidden
+    display: none !important
+
+@media (max-width: 510px)
+  #banner .media
+    .avatar
+      max-width: 98px
+    .title a
+      font-size: 18px
+    .info
+      font-size: 12px
+    .btn
+      font-size: 12px
+      padding: 2px 10px
+  #menu .nav li a
+    float: none
+  #menu .nav
+    width: 100%
+  #menu .nav li a
+    border: medium none !important
+    display: block
+    text-align: left
+    margin-left: 0
+  #main-content 
+    .container  
+      padding-bottom: 264px
+@media (max-width: 400px)
+  .search-bar .search-form input
+    width: 90%

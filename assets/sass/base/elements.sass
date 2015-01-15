@@ -1,0 +1,68 @@
+.pull-left
+  float: left
+
+.pull-right
+  float: right
+
+hr
+  height: 1px
+  +background(#eeeeee)
+  border: 0
+  +margin(10px 0)
+
+.clearfix
+  +clearfix
+
+.media
+  overflow: hidden
+  .pull-left
+    +margin(0 15px 0 0)
+  .pull-right
+    +margin(0 0 0 15px)
+  .media-body
+    overflow: hidden
+
+.avatar
+  border: 1px solid #3c3c3c
+  border-radius: 2px
+
+.btn
+  .fa
+    margin-right: 5px
+  background-color: #fff
+  border: medium none
+  border-radius: 3px
+  color: #333
+  display: inline-block
+  font-size: 16px
+  padding: 12px 25px
+  text-decoration: none  
+  &.btn-primary
+    color: white
+    background-color: #51b425
+    .fa 
+      color: #307f0d
+      font-size: 24px
+      vertical-align: middle
+    &:hover
+      background-color: #46c30f
+
+.mobile-visible
+  display: none
+//.fa 
+//  background-image: url(../images/icons-gray.png) 
+ // +size(18px 18px)
+//  vertical-align: middle
+//  display: inline-block
+ // &:hover 
+ //   background-image: url(../images/icons-white.png) 
+//.fa-star 
+//  background-position: 2px 0 
+//.fa-align-justify 
+//  background-position: 2px 0 
+//.fa-file-o
+//  background-position: 2px 0 
+//.fa-align-users 
+ // background-position: 2px 0 
+//.youtube-play
+//  background-position: 2px 0 

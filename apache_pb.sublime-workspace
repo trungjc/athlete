@@ -1,0 +1,404 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"backgr",
+				"background-size"
+			],
+			[
+				"a",
+				"active"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"min-",
+				"min-width"
+			],
+			[
+				"bac",
+				"background-size"
+			],
+			[
+				"cate",
+				"categories_info"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"border-r",
+				"border-radius"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"mi",
+				"min-width"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 51.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			"import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print('Please restart Sublime Text to finish installation')"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/xampp/htdocs/minc/wp-content/themes/minc-theme/js/parallax.js",
+		"/D/xampp/htdocs/minc/wp-config.php",
+		"/D/xampp/htdocs/minc/wp-content/themes/minc-theme/style.css",
+		"/D/xampp/htdocs/leadingteams-trung/leadingteams/configuration.php",
+		"/D/xampp/htdocs/leadingteams-trung/leadingteams/templates/leadingteams/less/style.less",
+		"/D/xampp/htdocs/leadingteams-trung/leadingteams/components/com_mijoshop/opencart/catalog/view/theme/default/template/product/product.tpl",
+		"/D/xampp/htdocs/leadingteams-trung/leadingteams/components/com_mijoshop/opencart/catalog/view/theme/leadingteams/template/product/product.tpl",
+		"/D/xampp/htdocs/minc/wp-content/themes/minc-theme/js/side-nav.js",
+		"/D/xampp/htdocs/minc/wp-content/themes/minc-theme/index.php",
+		"/D/xampp/htdocs/leadingteams-trung/leadingteams/templates/leadingteams/tpls/blocks/spotlight-3.php",
+		"/D/xampp/htdocs/leadingteams-trung/leadingteams/components/com_mijoshop/opencart/catalog/view/theme/leadingteams/stylesheet/stylesheet.css",
+		"/D/xampp/htdocs/leadingteams-trung/leadingteams/components/com_mijoshop/opencart/vqmod/xml/Prev_Next_Product.xml",
+		"/D/xampp/htdocs/leadingteams-trung/leadingteams/components/com_mijoshop/opencart/catalog/view/javascript/common.js",
+		"/D/xampp/htdocs/minc/wp-content/themes/minc-theme/footer.php",
+		"/C/Users/Computer/Downloads/PriceConnectorTemplate/PriceConnectorTemplate/css/960.css",
+		"/D/xampp/htdocs/leadingteams-trung/leadingteams/components/com_mijoshop/opencart/catalog/view/theme/leadingteams/template/product/category.tpl",
+		"/D/xampp/htdocs/minc/wp-content/themes/minc-theme/functions.php",
+		"/D/xampp/htdocs/minc/wp-content/plugins/contact-form-7/admin/admin.php",
+		"/D/xampp/htdocs/minc/wp-content/plugins/contact-form-7/wp-contact-form-7.php",
+		"/D/xampp/htdocs/minc/wp-content/themes/minc-theme/header.php",
+		"/D/xampp/htdocs/leadingteams/configuration.php",
+		"/D/xampp/htdocs/leadingteams/components/com_mijoshop/opencart/catalog/view/theme/leadingteams/template/product/category.tpl",
+		"/D/xampp/htdocs/leadingteams/components/com_mijoshop/opencart/vqmod/xml/Prev_Next_Product.xml",
+		"/D/xampp/htdocs/leadingteams/components/com_mijoshop/opencart/catalog/controller/product/category.php",
+		"/D/xampp/htdocs/leadingteams/components/com_mijoshop/opencart/catalog/view/theme/leadingteams/template/product/product.tpl",
+		"/D/xampp/htdocs/leadingteams/components/com_mijoshop/opencart/catalog/controller/product/product.php",
+		"/D/xampp/htdocs/leadingteams/components/com_mijoshop/opencart/catalog/view/theme/default/template/product/category.tpl",
+		"/D/xampp/htdocs/leadingteams/components/com_mijoshop/opencart/catalog/view/theme/leadingteams/template/common/header.tpl",
+		"/C/Users/Computer/Downloads/jQuery-Parallax-master(1)/jQuery-Parallax-master/index.html",
+		"/D/xampp/htdocs/infowrap/assets/js/main.js",
+		"/D/xampp/htdocs/minc/wp-content/themes/minc-theme/js/jquery.scrollTo-1.4.2-min.js",
+		"/D/xampp/htdocs/minc/wp-content/themes/minc-theme/js/jquery.parallax-1.1.3.js",
+		"/D/xampp/htdocs/minc/wp-content/themes/minc-theme/js/jquery.localscroll-1.2.7-min.js",
+		"/D/xampp/htdocs/leadingteams/components/com_easyblog/themes/dashboard/system/media.browser.tree-item.ejs",
+		"/D/xampp/htdocs/minc/wp-admin/ms-edit.php",
+		"/D/xampp/htdocs/minc/wp-content/plugins/post-types-order/post-types-order.php",
+		"/D/xampp/htdocs/slices/wp-content/themes/slices-theme/page-locations.php",
+		"/D/xampp/htdocs/minc/wp-content/themes/twentyfourteen/functions.php",
+		"/C/Users/Computer/Desktop/Parallax Demo_files/New folder/jQuery Parallax Plugin Demo.htm",
+		"/D/xampp/htdocs/minc/wp-content/themes/minc-theme/js/backgrounds.js",
+		"/D/xampp/htdocs/minc/wp-content/themes/minc-theme/js/kinetics.js",
+		"/D/xampp/htdocs/slices/wp-content/themes/slices-theme/slices/slices-functions.php",
+		"/D/xampp/htdocs/nhanviet/catalog/view/theme/pav_queenbeauty/stylesheet/stylesheet.css",
+		"/D/xampp/htdocs/nhanviet/admin/view/stylesheet/stylesheet.css",
+		"/D/xampp/htdocs/nhanviet/admin/language/vietnamese/common/footer.php",
+		"/D/xampp/htdocs/nhanviet/catalog/view/theme/pav_queenbeauty/stylesheet/customize/demo1.css",
+		"/D/xampp/htdocs/minc/wp-content/themes/minc/style.css",
+		"/D/xampp/htdocs/minc/wp-content/themes/minc/functions.php",
+		"/D/xampp/htdocs/slices/wp-content/themes/slices-theme/functions.php",
+		"/D/xampp/htdocs/minc/wp-content/themes/twentyfourteen/index.php",
+		"/D/xampp/htdocs/minc/wp-content/themes/twentythirteen/functions.php",
+		"/D/xampp/htdocs/ibroker/templates/ibroker/tpls/blocks/header.php",
+		"/D/xampp/htdocs/leadingteams-trung/leadingteams/templates/leadingteams/tpls/blocks/footer.php",
+		"/D/xampp/htdocs/leadingteams-trung/leadingteams/templates/leadingteams/tpls/blocks/head.php",
+		"/D/xampp/htdocs/leadingteams-trung/leadingteams/modules/mod_k2_content/tmpl/Default/default.php",
+		"/D/xampp/htdocs/csp/configuration.php",
+		"/D/xampp/htdocs/nhanviet/system/library/mail_pav.php",
+		"/D/xampp/htdocs/nhanviet/catalog/view/theme/pav_queenbeauty/template/module/filter.tpl",
+		"/D/xampp/htdocs/nhanviet/catalog/view/theme/pav_queenbeauty/template/module/pavbloglatest.tpl",
+		"/D/xampp/htdocs/nhanviet/catalog/language/vietnamese/module/tnt_newscat.php",
+		"/D/xampp/htdocs/nhanviet/catalog/view/theme/pav_queenbeauty/template/themecontrol/product.tpl",
+		"/D/xampp/htdocs/nhanviet/config.php",
+		"/D/xampp/htdocs/nhanviet/admin/config.php",
+		"/D/xampp/htdocs/nhanviet/catalog/language/vietnamese/module/pavblog.php",
+		"/D/xampp/htdocs/nhanviet/catalog/view/theme/pav_queenbeauty/stylesheet/pavreassurance.css",
+		"/D/xampp/htdocs/leadingteams-trung/leadingteams/modules/mod_jasidenews/tmpl/sidenews_content.php",
+		"/D/xampp/htdocs/leadingteams-trung/leadingteams/modules/mod_jasidenews/tmpl/default.php",
+		"/D/xampp/htdocs/csp/templates/t3_blank/tpls/blocks/head.php",
+		"/D/xampp/htdocs/nhanviet/catalog/language/english/module/pavtestimonial.php",
+		"/D/xampp/htdocs/nhanviet/catalog/view/theme/pav_queenbeauty/template/common/footer.tpl",
+		"/D/xampp/htdocs/nhanviet/catalog/view/theme/pav_queenbeauty/template/common/header.tpl",
+		"/D/xampp/htdocs/nhanviet/catalog/view/theme/pav_queenbeauty/template/information/contact.tpl",
+		"/D/xampp/htdocs/leadingteams/templates/leadingteams/tpls/default-content-right.php",
+		"/D/xampp/htdocs/leadingteams/templates/leadingteams/tpls/blocks/spotlight-2.php",
+		"/D/xampp/htdocs/ibroker/configuration.php",
+		"/D/xampp/htdocs/ibroker/templates/ibroker/tpls/blocks/footer.php",
+		"/D/xampp/htdocs/ibroker/templates/ibroker/less/style.less",
+		"/D/xampp/htdocs/leadingteams-trung/leadingteams/templates/leadingteams/js/script.js",
+		"/D/xampp/htdocs/csp/components/com_mijoshop/opencart/catalog/view/theme/csp/template/product/product.tpl",
+		"/D/xampp/htdocs/infowrap/assets/css/styles.css",
+		"/D/xampp/htdocs/infowrap/assets/css/app.css",
+		"/D/xampp/htdocs/infowrap/assets/css/responsive.css",
+		"/D/xampp/htdocs/leadingteams/templates/leadingteams/tpls/blocks/mainbody-content-right.php",
+		"/D/xampp/htdocs/nhanviet/catalog/language/vietnamese/module/pavtwitter.php",
+		"/D/xampp/htdocs/nhanviet/catalog/language/vietnamese/module/pavtestimonial.php",
+		"/D/xampp/htdocs/nhanviet/catalog/language/vietnamese/module/pavcategorybanner.php",
+		"/D/xampp/htdocs/nhanviet/catalog/language/vietnamese/module/pavmegamenubase.php",
+		"/D/xampp/htdocs/nhanviet/catalog/language/vietnamese/module/pavcustom.php",
+		"/D/xampp/htdocs/nhanviet/catalog/language/vietnamese/module/pavnewsletter.php",
+		"/D/xampp/htdocs/nhanviet/catalog/language/vietnamese/module/pavproducttabs.php",
+		"/D/xampp/htdocs/nhanviet/catalog/language/english/module/pavblog.php",
+		"/D/xampp/htdocs/nhanviet/catalog/language/english/module/pavtwitter.php",
+		"/D/xampp/htdocs/nhanviet/catalog/language/english/module/pavproducttabs.php",
+		"/D/xampp/htdocs/nhanviet/catalog/view/theme/pav_queenbeauty/template/module/pavnewsletter.tpl",
+		"/D/xampp/htdocs/leadingteams/templates/leadingteams/tpls/blocks/header.php",
+		"/D/xampp/htdocs/leadingteams/templates/leadingteams/tpls/blocks/mainnav.php",
+		"/D/xampp/htdocs/leadingteams/index.php",
+		"/D/xampp/htdocs/leadingteams/templates/leadingteams/less/style.less",
+		"/D/xampp/htdocs/ibroker/components/com_priceleafs/views/priceleafs/view.html.php",
+		"/D/xampp/htdocs/ibroker/components/com_priceleafs/views/policy/view.html.php",
+		"/D/xampp/htdocs/ibroker/templates/ibroker/less/variables.less",
+		"/D/xampp/htdocs/leadingteams/templates/leadingteams/tpls/blocks/head.php",
+		"/D/xampp/htdocs/ibroker/templates/ibroker/less/bootstrap.less",
+		"/D/xampp/htdocs/leadingteams/templates/leadingteams/tpls/blocks/footer.php",
+		"/C/Users/Computer/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Computer/AppData/Roaming/Sublime Text 3/Packages/User/Plain text.sublime-settings"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"primary-navigation",
+			"  max-width: 50%;",
+			"50%",
+			"<<",
+			"130px",
+			"intro",
+			"moduleItemComments",
+			"review",
+			"tab-review",
+			".menu-main-menu-container ul li a",
+			".primary-navigation li#menu-item-442",
+			"media",
+			"#review",
+			"$this->data['products'][] = array(",
+			"$categories = $this->model_catalog_product->getCategories($product_id);",
+			"$this->data['text_select'] = $this->language->get('text_select');",
+			"full",
+			"jq17",
+			"<<",
+			"\n<<<<<<< HEAD",
+			"jq17",
+			"$",
+			"section",
+			"$",
+			"Top primary menu",
+			"localScroll",
+			"media",
+			"$",
+			"<?php echo get_template_directory_uri() ?>",
+			" . '/minc-theme/",
+			"/minc-theme",
+			"src=\"",
+			"../images/",
+			" create_post_type_html5",
+			"html5blank",
+			"HTML5 Blank Custom",
+			"By Anonymous",
+			"Minc",
+			"body",
+			"DIENMAYNHANVIET",
+			"By Anonymous",
+			"Trần Anh",
+			"media",
+			"body",
+			"#7b0046",
+			"#topbar",
+			"{.calltoaction font-size: 15px;",
+			"D:\\xampp\\htdocs\\nhanviet",
+			"k2ReadMore",
+			"none",
+			"clr",
+			"();\n",
+			"<<<",
+			"120%",
+			"70px",
+			"#video-head",
+			"formNewLestter"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"jQuery",
+			"<?php echo get_template_directory_uri() ?>/",
+			"",
+			"src=\"<?php echo get_template_directory_uri() ?> . '/minc-theme/",
+			"images/",
+			"homesection",
+			"home section ",
+			"By: Trung Jimmy",
+			"DIENMAYNHANVIET",
+			"#eb9629",
+			"/home/die58346/public_html"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "apache_pb.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 387.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

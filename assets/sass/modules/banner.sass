@@ -1,0 +1,46 @@
+#banner
+  color: white
+  .banner-container
+    position: relative
+    min-height: 270px
+    background: url(../images/banner-img.png) no-repeat center
+  hr
+    background: rgba(225, 225, 225, 0.2)
+  .logo-space
+    +position(absolute, 0 0 null null)
+    img
+      max-width: 80px
+  .media
+    left: 20px
+    position: relative
+    +transform(translateY(-50%))
+    +position(absolute, 50%  null null 90px)
+    +media($desktop)
+      left: 90px
+      padding-right: 120px
+
+    .title ,.title a
+      font-size: 34px
+      color: #fff
+    .avatar
+      max-width: 140px
+    .media-body
+      display: inline-block
+    .info
+      margin: 10px 0
+    .info ,.info a
+      font-size: 16px
+      color: #4592f7
+  .subscriber
+    +position(absolute, 50px 50px null null)
+    .btn 
+      padding: 6px 25px
+
+.result
+  display: table
+  .col
+    display: table-cell
+    .row
+      +padding(0px 6px 5px 6px)
+      & + .row
+        vertical-align: middle

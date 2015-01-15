@@ -1,0 +1,41 @@
+#menu
+  .container
+    background: white
+    border-bottom: 1px solid #e0e0e0   
+  .nav
+    margin: 0 auto
+    width: 510px
+    li
+      a
+        color: #b5b5b5
+        display: inline-block
+        font-size: $font-base + 1
+        padding: 15px 20px
+        display: block
+        float: left
+        border-left: 1px solid #e0e0e0
+        .fa
+          margin-right: 5px
+          font-size: 16px
+        &.last
+          border-right: 1px solid #e0e0e0
+          
+        &.active,&:hover
+          color: #fff
+          background: #2563b4
+          border-color: #2563b4          
+          .fa
+            color: white 
+
+.account-menu
+  margin: 5px 0
+  li
+    display: inline
+    a
+      font-size: $font-base - 2 
+      text-transform: capitalize
+      &:hover
+        color: $colorText
+    & + li
+      +padding(0 0 0 8px)
+      background: url(../images/dot.png) no-repeat left 8px

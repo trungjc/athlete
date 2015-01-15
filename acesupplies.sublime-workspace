@@ -1,0 +1,300 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"margin",
+				"margin-top"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "Package Control Messages\n========================\n\nPackage Control:\n---------------\n\n  Version 3.0 Release Notes\n  \n  \n  **** Windows Sublime Text 3 Users ****\n  \n  Due to a bug in Package Control 2.0, Windows ST3 users will need to open the\n  Sublime Text console (ctrl+`) and execute the following Python to properly\n  upgrade. All other users may ignore this part of the message.\n  \n  Make sure NOT to copy the leading two spaces, or an \"unexpected indent\" error\n  will occur.\n  \n  import urllib.request,os; pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')\n  \n  ********\n  \n  \n  Package Control 3.0 adds a bunch of polish, improving the Sublime Text\n  experience for users and package developers:\n  \n   - improved upgrades of themes, color schemes and syntaxes\n   - dependency support\n   - SSL for Linux\n   - new secondary Windows HTTP backend\n   - patches for Python in Sublime Text 2 on Windows\n   - commands to easily remove channels and repositories\n   - an events API for packages\n   - improved documentation\n  \n  \n  As of July 2014, I now work for myself. This has allowed me to spend more time\n  working on open source software, including Package Control. If you appreciate\n  the work I've done, please consider a small donation. If even 5% of regular\n  users donated the price of a coffee or beer, that would cover quite a bit of\n  my development time! See https://packagecontrol.io/about for options.\n  \n  \n  Some recent Package Control stats:\n  \n   - every weekday over 1M JSON requests hit the channel server\n   - in December, the channel server will transmit 4TB+ of compressed JSON\n   - users have installed, upgraded or removed 85M+ packages since late 2011\n  \n  \n  Read more about the release at:\n  \n  https://packagecontrol.io/news#2014-12-23-Package_Control_30_Released\n  \n",
+			"settings":
+			{
+				"buffer_size": 2331,
+				"line_ending": "Windows",
+				"name": "Package Control Messages",
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 58.0,
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/java/eXoProjects/git-project/PLF4/platform-ui/halloween.patch",
+		"/D/xampp/htdocs/ibroker/configuration.php",
+		"/D/xampp/htdocs/infowrap/index.html",
+		"/D/xampp/htdocs/infowrap/assets/css/responsive.css",
+		"/D/java/eXoProjects/git-project/PLF4/platform-ui/platform-ui-skin/src/main/webapp/skin/less/wiki/wiki.less",
+		"/D/java/eXoProjects/git-project/PLF4/platform-ui/platform-ui-skin/src/main/webapp/skin/less/variables.less",
+		"/D/java/eXoProjects/git-project/PLF4/platform-ui/platform-ui-skin/src/main/webapp/skin/less/platform/portlets/extensions/login.less",
+		"/D/xampp/htdocs/infowrap/assets/js/main.js",
+		"/D/java/eXoProjects/git-project/PLF4/platform-ui/platform-ui-skin/src/main/webapp/skin/less/component/Form/Style.less~HEAD",
+		"/D/xampp/htdocs/infowrap/assets/css/styles.css",
+		"/D/java/eXoProjects/git-project/PLF4/forum/answer/service/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/forum/application/create/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/forum/extension/webapp/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/forum/extension/config/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/integration/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/integration/integ-wiki/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/integration/integ-social/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/integration/integ-ecms/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/integration/integ-ecms/integ-ecms-social/pom.xml",
+		"/D/xampp/htdocs/csp/configuration.php",
+		"/D/java/eXoProjects/git-project/PLF4/integration/integ-social/integ-social-ecms/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/integration/integ-search-service/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/integration/integ-search-portlet/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/integration/integ-gatein/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/integration/integ-forum/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/integration/integ-forum/integ-forum-social/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/integration/integ-calendar/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/forum/extras/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/forum/extras/injection/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/forum/extension/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/forum/component/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/forum/component/statistics/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/forum/component/rendering/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/forum/component/common/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/forum/component/bbcode/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/forum/application/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/forum/application/common/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/forum/answer/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/forum/answer/webapp/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/wiki/wiki-extension/wiki-extension-webapp/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/social/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/social/extension/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/social/extras/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/social/webapp/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/social/component/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/social/extension/notification/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/social/extras/widget/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/social/webapp/juzu-portlet/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/calendar/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/calendar/calendar-extension/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/wiki/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/wiki/wiki-macros/wiki-macros-iframe/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/wiki/wiki-webapp/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/wiki/wiki-webui/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/forum/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/forum/poll/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/forum/forumResources/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/forum/forum/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/forum/forum/webapp/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/forum/forum/service/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/wiki/wiki-extension/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/wiki/wiki-injector/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/wiki/wiki-upgrade-plugins/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/wiki/wiki-macros/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/wiki/wiki-renderer/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/wiki/wiki-service/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/forum/poll/webapp/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/forum/gadgets/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/forum/poll/service/pom.xml",
+		"/D/java/eXoProjects/git-project/PLF4/ecms/pom.xml"
+	],
+	"find":
+	{
+		"height": 21.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"tooltip",
+			"@tooltipColor",
+			"tooltip",
+			"UIWizardPageSelectLayoutForm ",
+			"lighten",
+			" .exo-mentions",
+			"@bodyBackground",
+			"@media screen and (max-width: 768px)  {",
+			"'))\n",
+			"col-xs-4 col-md-4",
+			" <div class=\"col-xs-4\"><div class=\"action-icon\">",
+			";\n",
+			"href=\"#\" class=\"action-icon\"",
+			"<a href=\"#\" class=\"action-icon\"><img  src=\"assets/images/icon-img.png\"></a>\n                <p>text here</p>",
+			"col-xs4",
+			"select",
+			"small",
+			"\">\n",
+			"\n<<<<<<< HEAD",
+			"<<<<<<< HEAD",
+			"<<"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"darken",
+			"col-xs-12 col-md-4",
+			" <div class=\"col-xs-12 col-md-4\"><div class=\"action-icon\">",
+			"href=\"#\" ",
+			"<div class=\"action-icon\"><a href=\"#\" class=\"action-icon\"><img  src=\"assets/images/icon-img.png\"></a>\n                <p>text here</p></div>",
+			"col-xs-4"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2331,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2331,
+								2331
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "acesupplies.sublime-project",
+	"replace":
+	{
+		"height": 38.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 391.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

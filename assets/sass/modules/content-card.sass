@@ -1,0 +1,62 @@
+.post 
+	background: white
+	border: 1px solid #d8d8d8
+	border-radius: 3px
+	+margin(8px 0 8px 0)
+	.post-content 
+		padding: 15px
+		h3,h3 a
+			font-weight: 400
+			font-size: 24px
+			color: $colorText
+			line-height: 24px
+		h3 
+			margin: 0 0 15px 0
+
+		p
+			line-height: 20px
+			margin: 0
+			
+
+	.feature-media
+		*	
+			width: 100%
+			
+	.meta-data,.date-public
+		color: $muted
+		font-size: 11px
+		img 
+			margin-right: 5px
+			vertical-align: -1px
+	.title-bar 
+		+background-image(linear-gradient(#fff,#ececec ))
+		padding: 15px
+		img 			
+			margin-right: 5px
+			vertical-align: -1px
+		h2,a 
+			color: $colorText
+			font-size: $font-base
+			text-transform: uppercase
+.snipet 
+	margin-top: 10px
+	border: 1px solid #d8d8d8
+	border-radius: 3px
+	+padding(15px 15px 15px 15px)
+	h3,h3 a
+		font-size: 20px
+		margin-bottom: 10px		
+
+.meta-data  
+	
+	span + span
+		padding-left: 6px
+		margin-left: 6px
+		position: relative
+		&:after
+			+position(absolute, 6px null null -2px)
+			content : ''
+			+size(3px 3px)
+			display: block
+			background: $muted
+			border-radius: 50%
