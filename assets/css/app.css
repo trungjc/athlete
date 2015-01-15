@@ -332,14 +332,14 @@ hr {
   padding: 12px 25px;
   text-decoration: none; }
   .btn .fa {
-    margin-right: 5px; }
+    margin-right: 5px;
+    font-size: 24px;
+    vertical-align: -2px; }
   .btn.btn-primary {
     color: white;
     background-color: #51b425; }
     .btn.btn-primary .fa {
-      color: #307f0d;
-      font-size: 24px;
-      vertical-align: middle; }
+      color: #307f0d; }
     .btn.btn-primary:hover {
       background-color: #46c30f; }
 
@@ -416,6 +416,7 @@ hr {
   #banner .banner-container {
     position: relative;
     min-height: 270px;
+    box-shadow: 0 0 100px 120px rgba(0, 0, 0, 0.9) inset;
     background: url(../images/banner-img.png) no-repeat center; }
   #banner hr {
     background: rgba(225, 225, 225, 0.2); }

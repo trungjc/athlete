@@ -1,0 +1,94 @@
+<li class="card hideable <%= date %> <%= content_type %><% if (typeof hide !== "undefined" && hide) { %> hide<% } %><% if (suppressed) { %> suppressed<% } else { %> best<% } %>" data-slug="<%= slug %>" >
+
+  <% if (source == 'twitter' || source == 'facebook'  || source == 'instagram' || source == 'vine') { %>
+
+    <div class="clearfix <%= source %>"> <%= embed_code %> </div>
+
+  <% } else if (source == 'youtube' || source == 'csnvideo' || source == 'sivideo' || source == 'brvideo' || source == 'sbnvideo') { %>
+
+    <div class="card-inner clearfix <%= source %>">
+      <div class="attribution clearfix">
+        <% if (typeof avatar_url !== "undefined") { %>
+        <img class="avatar" src="<%= avatar_url %>"/>
+        <div class="athlete-name-area">
+          <div class="athlete-name"><%= entity_name %></div>
+          <div class="timestamp" data-timestamp="<%= time_created %>" data-date="<%= date %>"></div>
+        </div>
+        <% } else { %>
+        <div class="timestamp" data-timestamp="<%= time_created %>" data-date="<%= date %>"></div>
+        <a href="<%= link %>" class="videoattr">
+        <div class="source" style="background: url(<%= favicon_url %>) no-repeat left center; padding-left: 24px">
+          <span class="source-name"><%= source_name %></span> &raquo;
+        </div>
+        </a>
+        <% } %>
+      </div>
+      <div class="card-top">
+        <%= embed_code %>
+      </div>
+      <div class="card-bottom">
+        <div class="content-title">
+        <a href="<%= link %>">
+          <%= title %>
+        </a>
+        </div>
+        <div class="description">
+        <a href="<%= link %>">
+          <%= description_short %>
+        </a>
+        </div>
+      </div>
+
+    </div>
+
+  <% } else { %>
+    <a class="card-inner clearfix native" href="<%= link %>" target="_blank">
+      <div class="attribution clearfix">
+        <% if (typeof avatar_url !== "undefined") { %>
+        <img src="<%= avatar_url %>" class="avatar"/>
+        <div class="athlete-name-area">
+          <div class="athlete-name"><%= entity_name %></div>
+          <div class="timestamp" data-timestamp="<%= time_created %>" data-date="<%= date %>"></div>
+        </div>
+        <div class="source" style="background: url(<%= favicon_url %>) no-repeat left center; padding-left: 24px">
+          <span class="source-name"><%= source_name %></span>
+        </div>
+        <% } else { %>
+        <div class="timestamp" data-timestamp="<%= time_created %>" data-date="<%= date %>"></div>
+        <div class="source" style="background: url(<%= favicon_url %>) no-repeat left center; padding-left: 24px">
+          <span class="source-name"><%= source_name %></span> &raquo;
+        </div>
+        <% } %>
+      </div>
+      <% if (snippet) { %>
+        <div class="card-all">
+          <div class="content-title snippet">
+            {# &#8220; #}<%= description_short %>{# &#8221; #}
+          </div>
+        </div>
+      <% } else if (suppressed) { %>
+        <div class="card-all">
+          <div class="content-title suppressed">
+            <%= title %>
+          </div>
+        </div>
+      <% } else { %>
+        <% if (image_url !== '') { %>
+          <div class="card-top">
+              <img class="content-image" src="<%= image_url %>"/>
+          </div>
+        <% } %>
+        <div class="<% if (image_url !== '') { %>card-bottom<% } else { %>card-all<% } %>">
+          <div class="content-title">
+              <%= title %>
+          </div>
+
+          <div class="description">
+            <%= description_short %>
+          </div>
+        </div>
+      <% } %>
+    </a>
+    <div class="nest" data-nest="<%= time_created %>"></div>
+<% } %>
+</li>
