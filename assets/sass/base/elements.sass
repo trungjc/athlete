@@ -38,7 +38,10 @@ hr
   display: inline-block
   font-size: 16px
   padding: 6px 25px
-  text-decoration: none  
+  text-decoration: none
+  &:hover
+    opacity: 0.8
+    +transition(all 0.5s  ease-in-out 0s)  
   &.btn-primary
     color: white
     background-color: #51b425

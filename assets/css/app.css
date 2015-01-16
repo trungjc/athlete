@@ -335,6 +335,11 @@ hr {
     margin-right: 5px;
     font-size: 24px;
     vertical-align: -2px; }
+  .btn:hover {
+    opacity: 0.8;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s; }
   .btn.btn-primary {
     color: white;
     background-color: #51b425; }
@@ -481,6 +486,7 @@ hr {
     font-size: 15px;
     padding: 15px 20px;
     display: block;
+    text-transform: capitalize;
     float: left;
     border-left: 1px solid #e0e0e0; }
     #menu .nav li a .fa {
@@ -556,57 +562,55 @@ hr {
   border-bottom: 1px dotted #eee;
   margin-bottom: 5px; }
 
-.post {
+.card-grid .card {
   background: white;
   border: 1px solid #d8d8d8;
   border-radius: 3px;
   margin: 8px 0; }
-  .post .post-content {
+  .card-grid .card .post-content {
     padding: 15px; }
-    .post .post-content h3, .post .post-content h3 a {
+    .card-grid .card .post-content h3, .card-grid .card .post-content h3 a {
       font-weight: 400;
       font-size: 24px;
       color: #2d2d2d;
       line-height: 24px; }
-    .post .post-content h3 {
+    .card-grid .card .post-content h3 {
       margin: 0 0 15px 0; }
-    .post .post-content p {
+    .card-grid .card .post-content p {
       line-height: 20px;
       margin: 0; }
-  .post .feature-media * {
+  .card-grid .card .feature-media * {
     width: 100%; }
-  .post .meta-data, .post .date-public {
+  .card-grid .card .meta-data, .card-grid .card .date-public {
     color: #7d7d7d;
     font-size: 11px; }
-    .post .meta-data img, .post .date-public img {
+    .card-grid .card .meta-data img, .card-grid .card .date-public img {
       margin-right: 5px;
       vertical-align: -1px; }
-  .post .title-bar {
+  .card-grid .card .title-bar {
     background-image: -webkit-linear-gradient(#fff, #ececec);
     background-image: linear-gradient(#fff, #ececec);
     padding: 15px; }
-    .post .title-bar img {
+    .card-grid .card .title-bar img {
       margin-right: 5px;
       vertical-align: -1px; }
-    .post .title-bar h2, .post .title-bar a {
+    .card-grid .card .title-bar h2, .card-grid .card .title-bar a {
       color: #2d2d2d;
       font-size: 14px;
       text-transform: uppercase; }
-
-.snipet {
+.card-grid .snipet {
   margin-top: 10px;
   border: 1px solid #d8d8d8;
   border-radius: 3px;
   padding: 15px; }
-  .snipet h3, .snipet h3 a {
+  .card-grid .snipet h3, .card-grid .snipet h3 a {
     font-size: 20px;
     margin-bottom: 10px; }
-
-.meta-data span + span {
+.card-grid .meta-data span + span {
   padding-left: 6px;
   margin-left: 6px;
   position: relative; }
-  .meta-data span + span:after {
+  .card-grid .meta-data span + span:after {
     position: absolute;
     top: 6px;
     left: -2px;
