@@ -10,6 +10,9 @@
 </title>
 <link href="assets/css/ionicons.css" rel="stylesheet">
 <link href="assets/css/app.css" rel="stylesheet">
+<script type="text/javascript">window.URL = window.location.href.replace('home.html', '');</script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/zepto/1.1.3/zepto.min.js"></script>
+<script type="text/javascript" src="assets/js/fanbase.js"></script>
 
 </head>
 <body>
@@ -110,7 +113,7 @@
 		</div>
 	</div>
 	<!--end banner-->
-	<div id="menu">
+	<div id="menu" class="top-menu">
 		<div class="container">
 			<ul class="nav clearfix">
 				<li><a href=" " class="active"><span class="fa  ion-ios-star"></span>Best</a></li>
@@ -127,6 +130,7 @@
 	<section id="main-content">
 		<div class="container">
 			<div class="left-bar mobile-hidden">
+				<div class="side-units">
 					<div class="facepile">
 						<h3 class="widget-title">Teammates</h3>
 						<div class="widget-body ">
@@ -212,9 +216,23 @@
 						</div>
 					</div>
 					<!--end feature-->
+				</div>
 			</div>
 			<div class="content">
-				<ul class="card-grid " id="card-grid ">
+				<ul id="cardTemplate" style="display:none">
+					<li class="card post">
+						<div class="title-bar clearfix">
+							<div class="pull-right date-public">{time}</div>
+							<h2><a href="{featureLink}"><img src="assets/images/espn.png" alt="" />{subTitle}</a></h2>
+						</div>
+						<div class="feature-media">{featureMedia}</div>
+						<div class="post-content">					
+						<h3><a href="{featureLink}">{fullTitle}</a></h3>
+						<p>{description}</p>
+						</div>
+					</li>
+				</ul>
+				<ul class="card-grid card-grid-more" id="card-grid">
 					<li class="card post">
 						<div class="title-bar clearfix">
 							<div class="pull-right date-public">14 hours ago</div>

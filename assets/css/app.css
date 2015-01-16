@@ -474,13 +474,13 @@ hr {
       .result .col .row + .row {
         vertical-align: middle; }
 
-#menu .container {
+.top-menu .container {
   background: white;
   border-bottom: 1px solid #e0e0e0; }
-#menu .nav {
+.top-menu .nav {
   margin: 0 auto;
   width: 510px; }
-  #menu .nav li a {
+  .top-menu .nav li a {
     color: #b5b5b5;
     display: inline-block;
     font-size: 15px;
@@ -489,16 +489,16 @@ hr {
     text-transform: capitalize;
     float: left;
     border-left: 1px solid #e0e0e0; }
-    #menu .nav li a .fa {
+    .top-menu .nav li a .fa {
       margin-right: 5px;
       font-size: 16px; }
-    #menu .nav li a.last {
+    .top-menu .nav li a.last {
       border-right: 1px solid #e0e0e0; }
-    #menu .nav li a.active, #menu .nav li a:hover {
+    .top-menu .nav li a.active, .top-menu .nav li a:hover {
       color: #fff;
       background: #2563b4;
       border-color: #2563b4; }
-      #menu .nav li a.active .fa, #menu .nav li a:hover .fa {
+      .top-menu .nav li a.active .fa, .top-menu .nav li a:hover .fa {
         color: white; }
 
 .account-menu {
@@ -515,6 +515,16 @@ hr {
       padding: 0 0 0 8px;
       background: url(../images/dot.png) no-repeat left 8px; }
 
+#targetMenu {
+	display: none;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+}
+.pinned {
+	position: fixed;
+	bottom: 0px;
+}
 .top-bar {
   background: #e1e3e7;
   background: #e1e3e7;
@@ -652,6 +662,7 @@ hr {
       margin-right: 0; }
 
 .feature {
+	background-color: #be2a2a;
   padding: 20px; }
   .feature .widget-title {
     color: white; }
@@ -716,13 +727,13 @@ hr {
     #banner .media .btn .fa {
       font-size: 18px; }
 
-  #menu .nav li a {
+  .top-menu .nav li a {
     float: none; }
 
-  #menu .nav {
+  .top-menu .nav {
     width: 100%; }
 
-  #menu .nav li a {
+  .top-menu .nav li a {
     border: medium none !important;
     display: block;
     text-align: left;
