@@ -35,27 +35,15 @@
 		<div class="search-bar">
 			<div class="container search-form">
 				<form class="" method="post" action="">
-					<input class="input-search" type="text" id="s" placeholder="Search for athletes and teams" />				
+					<input class="input-search" type="text" id="s" autocomplete="off" placeholder="Search for athletes and teams" />				
 					<div class="auto-complete-search">
+					</div>
+					<div class="complate-template" style="display:none">
 						<div class="media complete-search-item">
-							<a href="" class="pull-right"><img class="avatar" src="assets/images/avatar.png" alt="logo" /></a>
+							<a href="{the_link}" class="pull-right">{the_avatar}</a>
 							<div class="media-body">
-								<h4><a href="" >The Title content</a></h4>
-								<p>The data content </p>
-							</div>
-						</div>
-						<div class="media complete-search-item">
-							<a href="" class="pull-right"><img class="avatar" src="assets/images/avatar.png" alt="logo" /></a>
-							<div class="media-body">
-								<h4><a href="" >The Title content</a></h4>
-								<p>The data content </p>
-							</div>
-						</div>
-						<div class="media complete-search-item">
-							<a href="" class="pull-right"><img class="avatar" src="assets/images/avatar.png" alt="logo" /></a>
-							<div class="media-body">
-								<h4><a href="" >The Title content</a></h4>
-								<p>The data content </p>
+								<h4><a href="{the_link}">{the_title}</a></h4>
+								<p>{the_content}</p>
 							</div>
 						</div>
 					</div>

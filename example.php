@@ -12,6 +12,9 @@ array_push($data, '{"title_short": "Heisman Winner Marcus Mariota To Enter NFL D
 array_push($data, '{"title_short": "Oregon QB Marcus Mariota will leave early, enter draft", "favicon_url": "http://www.google.com/s2/favicons?domain=http://seattletimes.com/html/huskyfootball/2025464403_gridnotes15xml.html", "source_name": "Seattle Times", "content_type": "article", "title": "Oregon QB Marcus Mariota will leave early, enter draft", "encoded_key": "http%3A%2F%2Fseattletimes.com%2Fhtml%2Fhuskyfootball%2F2025464403_gridnotes15xml.html", "highlighted_content": "", "time_created": 1421273399, "snippet": false, "source": "Seattle Times", "featured": true, "embed_code": "", "image_url": "", "key": "http://seattletimes.com/html/huskyfootball/2025464403_gridnotes15xml.html", "date": "2015-01-14", "link": "http://seattletimes.com/html/huskyfootball/2025464403_gridnotes15xml.html", "description_short": "Heisman Trophy winner Marcus Mariota, whose bold moves and leadership on the field brought the Ducks to the brink of a national championship before falling short, is leaving Oregon early for the NFL.", "suppressed": false, "slug": "oregon-qb-marcus-mariota-will-leave-early-enter-draft", "all_athletes": ""}');
 array_push($data, '{"title_short": "@martindaleme Taylor Alie, Morgan Mahalak, Ty Griffin and . . .", "favicon_url": "http://www.google.com/s2/favicons?domain=https://twitter.com/DuckFootball/status/555472886299783168/", "source_name": "twitter", "content_type": "social", "title": "@martindaleme Taylor Alie, Morgan Mahalak, Ty Griffin and Travis Waller.", "encoded_key": "https%3A%2F%2Ftwitter.com%2FDuckFootball%2Fstatus%2F555472886299783168%2F", "highlighted_content": "", "time_created": 1421270030, "snippet": false, "source": "twitter", "featured": true, "embed_code": "\n<blockquote class=\"twitter-tweet\" lang=\"en\" data-conversation=\"none\" width=\"584\"><p>@martindaleme Taylor Alie, Morgan Mahalak, Ty Griffin and Travis Waller.</p><a href=\"https://twitter.com/DuckFootball/status/555472886299783168/\"></a></blockquote>\n", "image_url": "", "key": "https://twitter.com/DuckFootball/status/555472886299783168/", "date": "2015-01-14", "link": "https://twitter.com/DuckFootball/status/555472886299783168/", "description_short": null, "suppressed": false, "slug": "martindaleme-taylor-alie-morgan-mahalak-ty-griffin-and-travis-waller", "all_athletes": ""}');
 
+$template_search = '{"the_title" : "_TITLE_", "the_content" : "The content search", "the_link" : "_LINK_",'
+									 .' "the_avatar" : "http://localhost/athlete/assets/images/avatar.png"}';
+
 if(isset($_REQUEST["more"])) {
 	$t = intval($_REQUEST["more"]);
 	if($t < count($data)) {
@@ -20,13 +23,19 @@ if(isset($_REQUEST["more"])) {
 	   echo "{}";	
 	}
 } else if(isset($_REQUEST["q"])) {
-	$q = $_REQUEST["q"];
+	$q = str_replace(' ', '%20', $_REQUEST["q"]);
+	//
+	$url = "http://www.fanbase.com/autosuggest/?q=";
+	$r = file_get_contents($url.$q);
+	$array = json_decode($r , true);
+	$datas = $array['result'];
 	$result = array();
-	foreach($data as $key => $val) {
-		$val = substr($val, 16, 40);
-		if (strpos($val, $q) !== FALSE) {
-			array_push($result, $val);
-		}
+	foreach($datas as $key => $val) {
+		$link = strtolower(str_replace(' ', '-', $val)) . '/';
+		$rs = str_replace('_TITLE_', $val, $template_search);
+		$rs = str_replace('_LINK_', $link, $rs);
+		$array = json_decode($rs , true);
+	  array_push($result, $array);
 	}
 	echo json_encode($result);
 } else {
