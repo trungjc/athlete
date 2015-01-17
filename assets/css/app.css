@@ -523,7 +523,8 @@ hr {
 
 .pinned {
   position: fixed;
-  bottom: 0px; }
+  bottom: 0px;
+  background: #be2a2a; }
 
 .top-bar {
   background: #e1e3e7;
@@ -554,7 +555,7 @@ hr {
   top: 32px;
   left: 0;
   background: none repeat scroll 0 0 white;
-  border-radius: 0 0 4px 4px;
+  border-radius: 4px 4px;
   padding: 10px;
   width: 100%;
   text-align: left;

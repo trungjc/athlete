@@ -21,9 +21,21 @@
           });
           //
           Fanbase.showTopMenu();
-          //
           Fanbase.pinned($('.side-units'), 10);
+
+          $(window).resize(function(){
+            var width = $('body').width();
+            $('#targetMenu .container').width(width);
+          });
+          // auto search complete
+           $('.input-search').on('keydown',function(){
+             $(this).next('.auto-complete-search').addClass('active');
+              $('.auto-complete-search').on('mouseleave',function(){
+                   $(this).removeClass('active');
+              })
+          });
       },
+
       scrollHasLoadMore : function() {
         return ($('body').height() - $(window).scrollTop() - $(window).height() <= 66);  
       },
