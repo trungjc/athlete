@@ -516,15 +516,15 @@ hr {
       background: url(../images/dot.png) no-repeat left 8px; }
 
 #targetMenu {
-	display: none;
-	width: 100%;
-	position: fixed;
-	top: 0px;
-}
+  display: none;
+  width: 100%;
+  position: fixed;
+  top: 0; }
+
 .pinned {
-	position: fixed;
-	bottom: 0px;
-}
+  position: fixed;
+  bottom: 0px; }
+
 .top-bar {
   background: #e1e3e7;
   background: #e1e3e7;
@@ -662,7 +662,6 @@ hr {
       margin-right: 0; }
 
 .feature {
-	background-color: #be2a2a;
   padding: 20px; }
   .feature .widget-title {
     color: white; }
@@ -703,6 +702,9 @@ hr {
     width: 100%;
     z-index: 99; }
 
+  #targetMenu {
+    display: none !important; }
+
   #main-content .container {
     padding-bottom: 48px; }
 
@@ -727,13 +729,13 @@ hr {
     #banner .media .btn .fa {
       font-size: 18px; }
 
-  .top-menu .nav li a {
+  #menu .nav li a {
     float: none; }
 
-  .top-menu .nav {
+  #menu .nav {
     width: 100%; }
 
-  .top-menu .nav li a {
+  #menu .nav li a {
     border: medium none !important;
     display: block;
     text-align: left;
