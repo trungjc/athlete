@@ -570,7 +570,13 @@ hr {
 
 .media.complete-search-item {
   border-bottom: 1px dotted #eee;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  padding: 5px; }
+  .media.complete-search-item:hover {
+    border-radius: 3px;
+    background: #2563b4; }
+    .media.complete-search-item:hover * {
+      color: white; }
 
 .card-grid .card {
   background: white;
@@ -699,6 +705,7 @@ hr {
     bottom: 0;
     left: 0;
     position: fixed !important;
+    border-top: 1px solid #e0e0e0;
     width: 100%;
     z-index: 99; }
 
