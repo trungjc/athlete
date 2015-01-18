@@ -5,6 +5,11 @@
     width: 31.7616%
 
 @media (max-width: 767px)
+  #banner
+    .media
+      +position(static, null null 0 0)
+      padding: 10% 0 0 20%
+      +transform(none)
   #menu
     +position(fixed, null null 0 0)
     position: fixed !important
@@ -25,6 +30,7 @@
 
 @media (max-width: 510px)
   #banner .media
+    padding: 10% 0 0 10%
     .avatar
       max-width: 98px
     .title a
@@ -44,7 +50,8 @@
     font-size: 0
     width: 20%
     .fa
-      font-size: 24px
+      &+ span 
+        display: none
       margin: 0px
   #main-content 
     .container  
@@ -53,4 +60,4 @@
   .search-bar .search-form form
     display: block
     input
-      width: 90%
+      width: 100%

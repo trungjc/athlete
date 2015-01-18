@@ -14,7 +14,7 @@
           $(targetMenu).find('ul').append("<li id='subscriber-item'></li>");
           $('#subscriber-item').append($(CTAbutton).clone());
           $(targetMenu).find('.container').css('max-width', 'none')
-                       .css({'background': '#fff', 'box-shadow' : 'gray 2px 0px 5px'});
+                       .css({'background': '#fff'});
           window.show = false;
           //
           $(window).scroll(function() {

@@ -337,9 +337,9 @@ hr {
     vertical-align: -2px; }
   .btn:hover {
     opacity: 0.8;
-    -webkit-transition: all 0.5s ease-in-out 0s;
-    -moz-transition: all 0.5s ease-in-out 0s;
-    transition: all 0.5s ease-in-out 0s; }
+    -webkit-transition: all 0.25s ease-in-out 0s;
+    -moz-transition: all 0.25s ease-in-out 0s;
+    transition: all 0.25s ease-in-out 0s; }
   .btn.btn-primary {
     color: white;
     background-color: #51b425; }
@@ -502,6 +502,10 @@ hr {
     .top-menu .nav li a.last {
       border-right: 1px solid #e0e0e0; }
     .top-menu .nav li a.active, .top-menu .nav li a:hover {
+      opacity: 0.8;
+      -webkit-transition: all 0.25s ease-in-out 0s;
+      -moz-transition: all 0.25s ease-in-out 0s;
+      transition: all 0.25s ease-in-out 0s;
       color: #fff;
       background: #2563b4;
       border-color: #2563b4; }
@@ -717,6 +721,17 @@ hr {
   .pinned {
     width: 31.7616%; } }
 @media (max-width: 767px) {
+  #banner .media {
+    position: static;
+    bottom: 0;
+    left: 0;
+    padding: 10% 0 0 20%;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none; }
+
   #menu {
     position: fixed;
     bottom: 0;
@@ -741,17 +756,19 @@ hr {
   .mobile-hidden {
     display: none !important; } }
 @media (max-width: 510px) {
-  #banner .media .avatar {
-    max-width: 98px; }
-  #banner .media .title a {
-    font-size: 18px; }
-  #banner .media .info {
-    font-size: 12px; }
-  #banner .media .btn {
-    font-size: 12px;
-    padding: 2px 10px; }
-    #banner .media .btn .fa {
+  #banner .media {
+    padding: 10% 0 0 10%; }
+    #banner .media .avatar {
+      max-width: 98px; }
+    #banner .media .title a {
       font-size: 18px; }
+    #banner .media .info {
+      font-size: 12px; }
+    #banner .media .btn {
+      font-size: 12px;
+      padding: 2px 10px; }
+      #banner .media .btn .fa {
+        font-size: 18px; }
 
   #menu .nav {
     width: 100%; }
@@ -762,8 +779,9 @@ hr {
     font-size: 0;
     width: 20%; }
     #menu .nav li a .fa {
-      font-size: 24px;
       margin: 0px; }
+      #menu .nav li a .fa + span {
+        display: none; }
 
   #main-content .container {
     padding-bottom: 264px; } }
@@ -771,4 +789,4 @@ hr {
   .search-bar .search-form form {
     display: block; }
     .search-bar .search-form form input {
-      width: 90%; } }
+      width: 100%; } }
