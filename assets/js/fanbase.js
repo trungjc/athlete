@@ -9,7 +9,10 @@
       init : function() {
           var menu = "div#menu";
           var targetMenu = "div#targetMenu";
+          var CTAbutton = "div#banner div.subscriber .btn";
           $('body').append($(menu).clone().attr('id', 'targetMenu'));
+          $(targetMenu).find('ul').append("<li id='subscriber-item'></li>");
+          $('#subscriber-item').append($(CTAbutton).clone());
           $(targetMenu).find('.container').css('max-width', 'none')
                        .css({'background': '#fff', 'box-shadow' : 'gray 2px 0px 5px'});
           window.show = false;

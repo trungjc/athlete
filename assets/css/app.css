@@ -346,7 +346,9 @@ hr {
     .btn.btn-primary .fa {
       color: #307f0d; }
     .btn.btn-primary:hover {
-      background-color: #46c30f; }
+      background-color: #2563b4; }
+      .btn.btn-primary:hover .fa {
+        color: #fff; }
 
 .mobile-visible {
   display: none; }
@@ -361,7 +363,6 @@ hr {
     display: table; }
 
 .left-bar {
-  background: #be2a2a;
   float: left;
   display: block;
   margin-right: 2.35765%;
@@ -376,6 +377,8 @@ hr {
       width: 31.76157%; }
       .left-bar:last-child {
         margin-right: 0; } }
+  .left-bar .side-units {
+    background: #be2a2a; }
   @media screen and (min-width: 992px) {
     .left-bar {
       float: left;
@@ -415,6 +418,10 @@ hr {
 
 #header {
   margin-bottom: 35px; }
+
+.pinned {
+  position: fixed;
+  bottom: 0px; }
 
 #banner {
   color: white; }
@@ -500,6 +507,17 @@ hr {
       border-color: #2563b4; }
       .top-menu .nav li a.active .fa, .top-menu .nav li a:hover .fa {
         color: white; }
+.top-menu#targetMenu .nav {
+  width: 645px; }
+
+#subscriber-item a {
+  padding: 6px 25px;
+  margin: 3px 0 0 15px;
+  color: white; }
+  #subscriber-item a .fa {
+    font-size: 24px;
+    margin-right: 5px;
+    vertical-align: -2px; }
 
 .account-menu {
   margin: 5px 0; }
@@ -520,11 +538,6 @@ hr {
   width: 100%;
   position: fixed;
   top: 0; }
-
-.pinned {
-  position: fixed;
-  bottom: 0px;
-  background: #be2a2a; }
 
 .top-bar {
   background: #e1e3e7;
@@ -699,7 +712,10 @@ hr {
 
 @media screen and (min-width: 768px) and (max-width: 979px) {
   .container {
-    padding: 0 15px; } }
+    padding: 0 15px; }
+
+  .pinned {
+    width: 31.7616%; } }
 @media (max-width: 767px) {
   #menu {
     position: fixed;
@@ -737,20 +753,22 @@ hr {
     #banner .media .btn .fa {
       font-size: 18px; }
 
-  #menu .nav li a {
-    float: none; }
-
   #menu .nav {
     width: 100%; }
 
   #menu .nav li a {
-    border: medium none !important;
-    display: block;
-    text-align: left;
-    margin-left: 0; }
+    padding: 15px 0;
+    text-align: center;
+    font-size: 0;
+    width: 20%; }
+    #menu .nav li a .fa {
+      font-size: 24px;
+      margin: 0px; }
 
   #main-content .container {
     padding-bottom: 264px; } }
 @media (max-width: 400px) {
-  .search-bar .search-form input {
-    width: 90%; } }
+  .search-bar .search-form form {
+    display: block; }
+    .search-bar .search-form form input {
+      width: 90%; } }
