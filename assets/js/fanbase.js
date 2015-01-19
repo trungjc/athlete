@@ -53,6 +53,24 @@
 					.on('blur', function() {
 						$('div.auto-complete-search').hide();
 				  });
+				  //
+					$(window).resize(function(evt) {
+						var width = $('body').width();
+						//
+						if(width > 767) {
+							Fanbase.pinned($('.side-units'), 10);
+							var pinned = $('#main-content').find('div.pinned');
+							if(pinned.length > 0) {
+								if(width < 950) {
+									pinned.width( $('#main-content').find('.left-bar').width());
+								} else {
+									pinned.css('width', '');
+								}
+							}
+						} else {
+							$('#main-content').find('div.pinned').removeClass('pinned');
+						}
+					});
       },
 
       scrollHasLoadMore : function() {
@@ -93,8 +111,10 @@
         var windowCurrentHeight = $(window).scrollTop() + $(window).height();
         if(elmFullHieight <= windowCurrentHeight) {
            if(! elm.hasClass('pinned')) {
-             pr.css('height', pr.height());
-             elm.addClass('pinned');
+              if(pr.height() > 0) {
+                  pr.css('height', pr.height());
+              }
+              elm.addClass('pinned');
            }
         } else {
           elm.removeClass('pinned');
