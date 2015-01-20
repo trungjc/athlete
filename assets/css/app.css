@@ -947,8 +947,9 @@ hr {
     .title-bar .btn .fa + span {
       display: none; }
 
-  .heading.media .meta-data {
-    display: none; }
+  .snipet .pull-right, .snipet .pull-left {
+    float: none;
+    margin: 0 0 10px 0; }
 
   .mobile-visible-sm {
     display: block; } }
