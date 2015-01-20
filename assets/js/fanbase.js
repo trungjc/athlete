@@ -88,12 +88,12 @@
                         var Int = window.setInterval(function(){
                             if(mW < width) {
                                  ctn.width(mW);
-                                 mW += 18;    
+                                 mW += 10;    
                             } else {
                                 ctn.width('auto');
                                 window.clearInterval(Int);
                             }
-                        }, 50);
+                        }, 20);
                     }
                 } else {
                     $(targetMenu).hide();
@@ -108,16 +108,22 @@
             var pr = elm.parent();
             var elmFullHieight = pr.offset().top + pr.height() + delta;
             var windowCurrentHeight = $(window).scrollTop() + $(window).height();
-            if(elmFullHieight <= windowCurrentHeight) {
+            if(elmFullHieight <= windowCurrentHeight && $(targetMenu).css('display') != 'none') {
                 if(! elm.hasClass('pinned') && pr.css('display') != 'none') {
                     if(pr.height() > 0) {
                         pr.css('height', pr.height());
                     }
                     elm.addClass('pinned');
                 }
+                var max = $(window).height() - $(targetMenu).height();
+                if(max > pr.height()) {
+                    elm.css('bottom', 'auto').css('top', $(targetMenu).height());
+                } else {
+                    elm.css('bottom', '').css('top', '');
+                }
             } else {
                 elm.removeClass('pinned');
-                pr.css('height', '');
+                pr.css('height', '').css('bottom', '').css('top', '');
             }
         },
         buildSearch : function(datas) {
