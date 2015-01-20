@@ -23,21 +23,25 @@ hr
     overflow: hidden
 
 .avatar
-  border: 1px solid #3c3c3c
-  border-radius: 2px
+  border: 1px solid #d5d5d5
+  border-radius: 3px
 
 .btn
   .fa
     margin-right: 5px
     font-size: 24px
-    vertical-align: -2px
+    vertical-align: middle
+    display: inline-block
+    & + span
+      display: inline-block
+      vertical-align: middle
   background-color: #fff
   border: medium none
   border-radius: 3px
   color: #333
   display: inline-block
   font-size: 16px
-  padding: 6px 25px
+  padding: 10px 25px
   text-decoration: none
   &:hover
     opacity: 0.8
@@ -51,9 +55,26 @@ hr
       background-color: #2563b4
       .fa 
         color: #fff
+  &.btn-blue 
+    .fa 
+      color: #fff
+    background-color: #2563b4
+    &:hover
+      background-color: #51b425
 
 .mobile-visible
   display: none
+ 
+.desktop-visible
+  display: none
+  +media($desktop)
+    display: block
+.tablet-visible
+  display: none
+  +media($tablet)
+    display: block
+.muted
+  color: #999
 //.fa 
 //  background-image: url(../images/icons-gray.png) 
  // +size(18px 18px)

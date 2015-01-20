@@ -319,8 +319,8 @@ hr {
     overflow: hidden; }
 
 .avatar {
-  border: 1px solid #3c3c3c;
-  border-radius: 2px; }
+  border: 1px solid #d5d5d5;
+  border-radius: 3px; }
 
 .btn {
   background-color: #fff;
@@ -329,12 +329,16 @@ hr {
   color: #333;
   display: inline-block;
   font-size: 16px;
-  padding: 6px 25px;
+  padding: 10px 25px;
   text-decoration: none; }
   .btn .fa {
     margin-right: 5px;
     font-size: 24px;
-    vertical-align: -2px; }
+    vertical-align: middle;
+    display: inline-block; }
+    .btn .fa + span {
+      display: inline-block;
+      vertical-align: middle; }
   .btn:hover {
     opacity: 0.8;
     -webkit-transition: all 0.25s ease-in-out 0s;
@@ -349,9 +353,30 @@ hr {
       background-color: #2563b4; }
       .btn.btn-primary:hover .fa {
         color: #fff; }
+  .btn.btn-blue {
+    background-color: #2563b4; }
+    .btn.btn-blue .fa {
+      color: #fff; }
+    .btn.btn-blue:hover {
+      background-color: #51b425; }
 
 .mobile-visible {
   display: none; }
+
+.desktop-visible {
+  display: none; }
+  @media screen and (min-width: 992px) {
+    .desktop-visible {
+      display: block; } }
+
+.tablet-visible {
+  display: none; }
+  @media screen and (min-width: 767px) {
+    .tablet-visible {
+      display: block; } }
+
+.muted {
+  color: #999; }
 
 .container {
   max-width: 68em;
@@ -404,6 +429,21 @@ hr {
       width: 65.88078%; }
       .content:last-child {
         margin-right: 0; } }
+  .content.full-width {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .content.full-width:last-child {
+      margin-right: 0; }
+    @media screen and (min-width: 767px) {
+      .content.full-width {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        .content.full-width:last-child {
+          margin-right: 0; } }
   @media screen and (min-width: 992px) {
     .content {
       float: left;
@@ -422,6 +462,16 @@ hr {
 .pinned {
   position: fixed;
   bottom: 0px; }
+
+.content-card {
+  background: #ededed;
+  width: 90%;
+  padding: 2px 10px;
+  margin: 0 auto !important;
+  float: none; }
+  @media screen and (min-width: 767px) {
+    .content-card {
+      width: 700px; } }
 
 #banner {
   color: white; }
@@ -496,9 +546,6 @@ hr {
     text-transform: capitalize;
     float: left;
     border-left: 1px solid #e0e0e0; }
-    .top-menu .nav li a .fa {
-      margin-right: 5px;
-      font-size: 16px; }
     .top-menu .nav li a.last {
       border-right: 1px solid #e0e0e0; }
     .top-menu .nav li a.active, .top-menu .nav li a:hover {
@@ -524,7 +571,7 @@ hr {
     vertical-align: -2px; }
 
 .account-menu {
-  margin: 5px 0; }
+  margin: 8px 0 5px 0; }
   .account-menu li {
     display: inline; }
     .account-menu li a {
@@ -542,6 +589,54 @@ hr {
   width: 100%;
   position: fixed;
   top: 0; }
+
+.menu-top {
+  float: left;
+  margin: 9px 0 0 30px; }
+  .menu-top li {
+    display: inline;
+    margin: 0 9px; }
+    .menu-top li a {
+      color: #2d2d2d; }
+      .menu-top li a:hover {
+        color: #2563b4; }
+
+.tab-menu {
+  padding-top: 18px;
+  background: #2563b4;
+  background: #2563b4;
+  text-align: center; }
+  .tab-menu li {
+    display: inline-block; }
+    .tab-menu li a {
+      color: #5c8dd0;
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 3px 3px 0 0; }
+      .tab-menu li a.active {
+        position: relative; }
+        .tab-menu li a.active:after {
+          position: absolute;
+          bottom: -6px;
+          left: 50%;
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+          height: 12px;
+          width: 12px;
+          content: "";
+          margin-left: -6px;
+          background: #1b4e90; }
+      .tab-menu li a.active, .tab-menu li a:hover {
+        color: white;
+        background: #1b4e90;
+        border-radius: 3px 3px 0 0; }
+
+.fa {
+  margin-right: 5px;
+  font-size: 16px; }
 
 .top-bar {
   background: #e1e3e7;
@@ -619,15 +714,13 @@ hr {
     color: #7d7d7d;
     font-size: 11px; }
     .card-grid .card .meta-data img, .card-grid .card .date-public img {
-      margin-right: 5px;
-      vertical-align: -1px; }
+      margin-right: 5px; }
   .card-grid .card .title-bar {
     background-image: -webkit-linear-gradient(#fff, #ececec);
     background-image: linear-gradient(#fff, #ececec);
     padding: 15px; }
     .card-grid .card .title-bar img {
-      margin-right: 5px;
-      vertical-align: -1px; }
+      margin-right: 5px; }
     .card-grid .card .title-bar h2, .card-grid .card .title-bar a {
       color: #2d2d2d;
       font-size: 14px;
@@ -654,6 +747,39 @@ hr {
     display: block;
     background: #7d7d7d;
     border-radius: 50%; }
+
+.card-grid .card .title-bar .heading.media h2 {
+  margin: 10px 0 5px 0;
+  text-transform: capitalize;
+  font-size: 16px; }
+  .card-grid .card .title-bar .heading.media h2 a {
+    font-size: 16px;
+    text-transform: capitalize; }
+.card-grid .card .title-bar .subscriber .btn {
+  color: white;
+  margin-top: 8px;
+  text-transform: capitalize; }
+
+.meta-data img, .meta-data span {
+  display: inline-block;
+  vertical-align: middle; }
+
+.content-card .card-grid .card .title-bar {
+  padding: 10px; }
+
+.tweet-actions li {
+  float: left; }
+  .tweet-actions li + li {
+    margin-left: 5px; }
+.tweet-actions a {
+  color: #999999; }
+  .tweet-actions a i {
+    font-size: 20px; }
+
+.content-entry .header .media a {
+  color: #2d2d2d; }
+.content-entry .header .pull-left {
+  margin: 5px 5px 0 0; }
 
 .facepile {
   background: #f8f8f8;
@@ -709,10 +835,17 @@ hr {
   margin-top: 10px;
   border: 1px solid #d8d8d8;
   border-radius: 3px;
+  background: white;
   padding: 15px; }
   .snipet h3, .snipet h3 a {
     font-size: 20px;
     margin-bottom: 10px; }
+  .snipet h4, .snipet h4 a {
+    font-size: 18px;
+    color: #2d2d2d;
+    font-family: "Avenir LT W01_55 Roman", "Helvetica Neue", "Helvetica", sans-serif; }
+  .snipet .btn + h4 {
+    padding-top: 10px; }
 
 @media screen and (min-width: 768px) and (max-width: 979px) {
   .container {

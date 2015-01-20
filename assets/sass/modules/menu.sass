@@ -14,10 +14,7 @@
         display: block
         text-transform: capitalize
         float: left
-        border-left: 1px solid #e0e0e0
-        .fa
-          margin-right: 5px
-          font-size: 16px
+        border-left: 1px solid #e0e0e0        
         &.last
           border-right: 1px solid #e0e0e0
           
@@ -43,7 +40,7 @@
       vertical-align: -2px
 
 .account-menu
-  margin: 5px 0
+  margin: 8px 0 5px 0
   li
     display: inline
     a
@@ -59,3 +56,40 @@
   display: none
   width: 100%
   +position(fixed, 0 null null null) 
+.menu-top
+  float: left
+  margin: 9px 0 0 30px
+  li
+    display: inline
+    margin: 0 9px
+    a
+      color: $colorText
+      &:hover
+        color: $link
+.tab-menu
+  padding-top: 18px
+  +background(#2563b4)
+  text-align: center
+  li
+    display: inline-block
+    a 
+      color: #5c8dd0
+      display: inline-block
+      padding: 10px 20px
+      border-radius: 3px 3px 0 0
+      &.active
+        position: relative
+        &:after 
+          +position(absolute, null null -6px 50%)
+          +transform(rotate(45deg))
+          +size(12px 12px)
+          content: ""
+          margin-left: -6px
+          background: #1b4e90      
+      &.active,&:hover
+        color: white
+        background: #1b4e90
+        border-radius: 3px 3px 0 0
+.fa
+  margin-right: 5px
+  font-size: 16px

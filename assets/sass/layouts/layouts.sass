@@ -16,7 +16,10 @@
   +span-columns(12)
   +media($tablet)
     +span-columns(8)
-
+  &.full-width
+    +span-columns(12)
+    +media($tablet)
+      +span-columns(12)
   +media($desktop)
     +span-columns(8)
 
@@ -29,4 +32,11 @@
   position: fixed
   bottom: 0px
 
-
+.content-card 
+  background: #ededed 
+  width: 90% 
+  +media($tablet)
+    width: 700px 
+  padding: 2px 10px
+  margin: 0 auto !important
+  float: none
