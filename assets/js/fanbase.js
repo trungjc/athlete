@@ -6,35 +6,30 @@
         ajaxSearch : (window.URL + 'example.php?q='),
         hasSearch : true,
         caches : {},
+        onscroll : [],
         init : function() {
             var menu = "div#menu";
-            var targetMenu = "div#targetMenu";
-            var CTAbutton = "div#banner div.subscriber .btn";
-            $('body').append($(menu).clone().attr('id', 'targetMenu'));
-            $(targetMenu).find('ul').append("<li id='subscriber-item'></li>");
-            $('#subscriber-item').append($(CTAbutton).clone());
-            $(targetMenu).find('.container').css('max-width', 'none')
-                         .css({'background': '#fff'});
-            window.show = false;
+            if($(menu).length > 0) {
+              var targetMenu = "div#targetMenu";
+              var CTAbutton = "div#banner div.subscriber .btn";
+              $('body').append($(menu).clone().attr('id', 'targetMenu'));
+              $(targetMenu).find('ul').append("<li id='subscriber-item'></li>");
+              $('#subscriber-item').append($(CTAbutton).clone());
+              $(targetMenu).find('.container').css('max-width', 'none')
+                           .css({'background': '#fff'});
+              window.show = false;
+              //
+              Fanbase.showTopMenu();
+              Fanbase.onscroll.push(Fanbase.showTopMenu);
+            }
+            Fanbase.onscroll.push(Fanbase.doLoadMore);
             //
             $(window).scroll(function() {
-                Fanbase.showTopMenu();
-                //
                 Fanbase.pinned($('.side-units'), 10);
-                //
-                if(Fanbase.scrollHasLoadMore()) {
-                    if(Fanbase.TS) {
-                        clearTimeout(Fanbase.TS);
-                    }
-                    window.TS = setTimeout(function(){
-                        Fanbase.loadMore();
-                        clearTimeout(Fanbase.TS);
-                        Fanbase.TS = null;
-                    }, 200);
+                for(var i = 0; i < Fanbase.onscroll.length; ++i) {
+                  Fanbase.onscroll[i]();
                 }
             });
-            //
-            Fanbase.showTopMenu();
             Fanbase.pinned($('.side-units'), 10);
             //
             $('input.input-search').on('keyup', function() {
@@ -71,6 +66,18 @@
                     $('#main-content').find('div.pinned').removeClass('pinned');
                 }
             });
+        },
+        doLoadMore : function() {
+            if(Fanbase.scrollHasLoadMore()) {
+                if(Fanbase.TS) {
+                    clearTimeout(Fanbase.TS);
+                }
+                window.TS = setTimeout(function(){
+                    Fanbase.loadMore();
+                    clearTimeout(Fanbase.TS);
+                    Fanbase.TS = null;
+                }, 200);
+            }
         },
         scrollHasLoadMore : function() {
             return ($('body').height() - $(window).scrollTop() - $(window).height() <= 66);    
@@ -128,12 +135,12 @@
         },
         buildSearch : function(datas) {
             $('div.auto-complete-search').html('');
-            if (datas && datas.length > 0) {
+            var template = $('.complate-template').html();
+            if (datas && datas.length > 0 && template && template.length > 0) {
                 for(var i = 0; i < datas.length; ++i) {
                     var data = datas[i];//
                     var theAvatar = (data.the_avatar && data.the_avatar.length > 0) ? 
                                          data.the_avatar : 'https://d3bn37nfny3y6t.cloudfront.net/images/silhouette_avatar.jpg';
-                    var template = $('.complate-template').html();
                     template = template.replace(/{the_link}/g, data.the_link);
                     template = template.replace('{the_title}', data.the_title);
                     template = template.replace('{the_content}', data.the_content);
@@ -170,7 +177,7 @@
             }
         },
         loadMore : function() {
-            if (Fanbase.hasMore) {
+            if (Fanbase.hasMore && $('#cardTemplate').length > 0) {
                 Fanbase.hasMore = false;
                 $.getJSON(
                     (Fanbase.ajaxMore + Fanbase.T), 
