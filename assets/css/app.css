@@ -775,6 +775,8 @@ hr {
   color: #999999; }
   .tweet-actions a i {
     font-size: 20px; }
+  .tweet-actions a:hover {
+    color: #2563b4; }
 
 .content-entry .header .media a {
   color: #2d2d2d; }
