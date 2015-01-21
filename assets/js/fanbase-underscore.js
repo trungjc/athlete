@@ -8,29 +8,16 @@
         hasSearch : true,
         caches : {},
         onscroll : [],
-        searchTemplate : _.template(
-          '<div class="media complete-search-item">' +
-            '<a href="<%=the_link%>" class="pull-right"><img class="avatar" src="<%=the_avatar%>" alt="logo" /></a>' +
-            '<div class="media-body">' +
-              '<h4><a href="<%=the_link%>"><%=the_title%></a></h4>' +
-              '<p><%=the_content%></p>' +
-            '</div>' +
-          '</div>'
-        ),
-        loadMoreTemplate : _.template(
-          '<li class="card post">' +
-            '<div class="title-bar clearfix">' +
-              '<div class="pull-right date-public"><%=time_created%></div>' +
-              '<h2><a href="<%=link%>"><img src="assets/images/espn.png" alt=""/><%=title_short%></a></h2>' +
-            '</div>' +
-            '<div class="feature-media"><%=featureMedia%></div>' +
-            '<div class="post-content">' +      
-            '<h3><a href="<%=link%>"><%=title%></a></h3>' +
-            '<p><%=description_short%></p>' +
-            '</div>' +
-          '</li>'
-        ),
+        searchTemplate : _.template(''),
+        loadMoreTemplate : _.template(''),
         init : function() {
+        	Fanbase.loadTemplate(window.URL + 'autocomplate-template.html', function(data) {
+        		Fanbase.searchTemplate = _.template(data);
+        	});
+        	Fanbase.loadTemplate(window.URL + 'loadmore-template.html', function(data) {
+        		Fanbase.loadMoreTemplate = _.template(data);
+        	});
+        	//
             var menu = "div#menu";
             if($(menu).length > 0) {
               var targetMenu = "div#targetMenu";
@@ -89,6 +76,11 @@
                     $('#main-content').find('div.pinned').removeClass('pinned');
                 }
             });
+        },
+        loadTemplate : function(url, callBack) {
+        	$.ajax({ url: url, success: function(data){
+        		callBack(data);
+        	}});
         },
         doLoadMore : function() {
             if(Fanbase.scrollHasLoadMore()) {
