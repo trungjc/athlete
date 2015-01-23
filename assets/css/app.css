@@ -862,6 +862,32 @@ hr {
   .snipet .btn + h4 {
     padding-top: 10px; }
 
+.list-search {
+  border-radius: 3px; }
+  .list-search ul li {
+    background: #fff;
+    border: 1px solid #dadada;
+    margin-bottom: 6px;
+    vertical-align: middle;
+    border-radius: 3px; }
+    .list-search ul li:first-child {
+      margin-top: 10px; }
+    .list-search ul li img {
+      margin: 3px 8px 3px 3px;
+      display: inline-block;
+      vertical-align: middle; }
+    .list-search ul li a {
+      font-weight: 700; }
+    .list-search ul li span {
+      display: inline-block; }
+
+#main-content .rs-search {
+  background: none; }
+  #main-content .rs-search .content-card {
+    background: none;
+    color: #fff;
+    padding-bottom: 20px; }
+
 @media screen and (min-width: 768px) and (max-width: 979px) {
   .container {
     padding: 0 15px; }
@@ -903,6 +929,9 @@ hr {
 
   .mobile-hidden {
     display: none !important; } }
+@media (max-width: 600px) {
+  .rs-search {
+    padding-bottom: 0px !important; } }
 @media (max-width: 510px) {
   #banner .media {
     padding: 10% 0 0 10%; }
